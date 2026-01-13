@@ -20,4 +20,8 @@ export class TenancyService implements OnModuleInit {
       throw new BadRequestException(`Tenant ${tenantId} not found`);
     }
   }
+
+  getTenants() {
+    return this.tenants;
+  }
 }
